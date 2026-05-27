@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <main class="layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-top">
+        <div class="profile-frame">
+          <img src="profile.jpg" alt="Profile Picture">
+        </div>
+
+        <div class="identity">
+          <p class="eyebrow">Frontend Engineer</p>
+          <h1>Your Name</h1>
+          <p class="description">
+            Crafting immersive digital experiences with modern interfaces,
+            motion systems, and scalable frontend architecture.
+          </p>
+        </div>
+
+        <div class="theme-switch">
+          <span>Dark</span>
+
+          <button id="themeToggle" aria-label="Toggle theme">
+            <div class="toggle-circle"></div>
+          </button>
+
+          <span>Light</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about" class="nav-link active">
+          <span>01</span>
+          About
+        </a>
+
+        <a href="#skills" class="nav-link">
+          <span>02</span>
+          Skills
+        </a>
+
+        <a href="#projects" class="nav-link">
+          <span>03</span>
+          Projects
+        </a>
+
+        <a href="#contact" class="nav-link">
+          <span>04</span>
+          Contact
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Available for freelance & full-time roles.</p>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <section class="content">
+
+      <!-- ABOUT -->
+      <section id="about" class="panel about-panel">
+        <div class="section-heading">
+          <span>/ About Me</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card large">
+            <h2>
+              Designing interfaces that feel bold, intuitive,
+              and deeply human.
+            </h2>
+          </div>
+
+          <div class="about-card">
+            <p>
+              I’m passionate about Frontend Development and building digital
+              products that merge aesthetics with performance.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <p>
+              My focus is creating responsive interfaces, scalable UI systems,
+              and interactions that elevate user experience beyond visuals.
+            </p>
+          </div>
+
+          <div class="about-card accent">
+            <p>
+              I enjoy transforming complex ideas into elegant, accessible,
+              and modern web experiences using clean code and thoughtful design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="panel">
+        <div class="section-heading">
+          <span>/ Skills</span>
+        </div>
+
+        <div class="skills-wrapper">
+
+          <div class="skill-category">
+            <h3>Core Tech</h3>
+
+            <div class="chips">
+              <div class="chip">HTML5</div>
+              <div class="chip">CSS3</div>
+              <div class="chip">JavaScript</div>
+              <div class="chip">Responsive Design</div>
+              <div class="chip">CSS Grid</div>
+              <div class="chip">Flexbox</div>
+              <div class="chip">REST APIs</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+
+            <div class="chips">
+              <div class="chip">React</div>
+              <div class="chip">Next.js</div>
+              <div class="chip">GSAP</div>
+              <div class="chip">Three.js</div>
+              <div class="chip">Tailwind</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools</h3>
+
+            <div class="chips">
+              <div class="chip">Git</div>
+              <div class="chip">Figma</div>
+              <div class="chip">VS Code</div>
+              <div class="chip">Vite</div>
+              <div class="chip">Netlify</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="panel">
+        <div class="projects-top">
+          <div class="section-heading">
+            <span>/ Projects</span>
+          </div>
+
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="js">JS</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="ui">UI</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card wide" data-category="js">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                alt="Project"
+              >
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">JavaScript</span>
+              <h3>Interactive Analytics Dashboard</h3>
+              <p>
+                Real-time data visualization dashboard with advanced filtering
+                and animated chart transitions.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card tall" data-category="design">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop"
+                alt="Project"
+              >
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">Design</span>
+              <h3>Creative Brand Platform</h3>
+              <p>
+                Premium visual identity and immersive landing page experience.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ui">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+                alt="Project"
+              >
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">UI</span>
+              <h3>Finance Mobile UI</h3>
+              <p>
+                Clean mobile-first fintech experience with modular UI patterns.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="js">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop"
+                alt="Project"
+              >
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">JavaScript</span>
+              <h3>Motion Portfolio Experience</h3>
+              <p>
+                Experimental portfolio with smooth transitions and dynamic motion.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="panel">
+        <div class="section-heading">
+          <span>/ Contact</span>
+        </div>
+
+        <div class="contact-wrapper">
+
+          <div class="contact-info">
+            <h2>
+              Let’s build something exceptional together.
+            </h2>
+
+            <p>
+              Whether it’s a collaboration, freelance project,
+              or just a conversation about design and technology —
+              I’d love to hear from you.
+            </p>
+          </div>
+
+          <form class="contact-form">
+
+            <div class="input-group">
+              <input type="text" required>
+              <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+              <input type="email" required>
+              <label>Email Address</label>
+            </div>
+
+            <div class="input-group textarea-group">
+              <textarea required></textarea>
+              <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+        <footer class="social-footer">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Behance</a>
+          <a href="#">Dribbble</a>
+        </footer>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
